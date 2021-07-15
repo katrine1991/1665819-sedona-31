@@ -6,10 +6,8 @@
   <link rel="icon" type="image/png" sizes="152x152" href="img/152.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/32.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="img/16.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -91,8 +89,7 @@
             <div class="block block-grey">
               <h3 class="subtitle subtitle-grey">Красивая дорога</h3>
               <p class="desc nubmer-grey">— №4 —</p>
-              <p class="desc desc-grey"> Ехать в Седону из Лас-Вегаса совсем
-                 не скучно!</p>
+              <p class="desc desc-grey">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
             </div>
           </li>
           <li class="feature-item">
@@ -115,14 +112,12 @@
         </div>
         <div class="button-search">
           <div class="form-button-search">
-            <button class="form-button" type="button" aria-label="Бронирование гостиницы в Седоне по датам"> Поиск
-              гостиницы в Седоне
-            </button>
+            <a href="#" class="form-button">Поиск гостиницы в Седоне</a>
           </div>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
             <div class="search-check-in">
               <label class="search-date" for="arrival">Дата заезда</label>
-              <input class="search-check" type="text" id="arrival" name="arrival" placeholder="24 апреля 2017" required>
+              <input class="search-check" type="text" id="arrival" name="arrival" value="24 апреля 2017" required>
               <svg class="calendar-pic" width="21" height="23" viewBox="0 0 21 23" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -133,7 +128,7 @@
             </div>
             <div class="search-check-out">
               <label class="search-date" for="departure">Дата выезда</label>
-              <input class="search-check" type="text" id="departure" name="departure" placeholder="4 июля 2017"
+              <input class="search-check" type="text" id="departure" name="departure" value="4 июля 2017"
                 required>
               <svg class="calendar-pic" width="21" height="23" viewBox="0 0 21 23" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +146,7 @@
                     <rect width="12" height="3" fill="#A9A9A9" />
                   </svg>
                 </button>
-                <input class="search-visitors-number" type="text" name="adults" id="adults" placeholder="2" required>
+                <input class="search-visitors-number" type="text" name="adults" id="adults" value="2" required>
                 <button class="form-search-button search-button-plus" type="button" aria-label="Увеличить">
                   <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -167,7 +162,7 @@
                     <rect width="12" height="3" fill="#A9A9A9" />
                   </svg>
                 </button>
-                <input class="search-visitors-number" type="text" name="children" id="children" placeholder="0"
+                <input class="search-visitors-number" type="text" name="children" id="children" value="0"
                   required>
                 <button class="form-search-button search-button-plus" type="button" aria-label="Увеличить">
                   <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">

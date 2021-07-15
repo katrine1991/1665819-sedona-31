@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("/fonts/PTSans.woff2")format("woff2"),
-    url("/fonts/PTSans-Bold.woff")format("woff");
+  src: url("../fonts/PTSans.woff2")format("woff2"),
+    url("../fonts/PTSans.woff")format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("/fonts/PTSans-Bold.woff2")format("woff2"),
-    url("/fonts/PTSans-Bold.woff")format("woff");
+  src: url("../fonts/PTSans-Bold.woff2")format("woff2"),
+    url("../fonts/PTSans-Bold.woff")format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -56,10 +56,13 @@
 
 /* Global */
 
+
+.html,
 .page {
   background-color: var(--basic-grey);
-    height: 100%;
-  }
+  height: 100%;
+  min-height: 100%;
+}
 
 .page-body {
   padding: 0;
@@ -71,7 +74,7 @@
   text-transform: uppercase;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
   width: 100%;
- background-color: var(--basic-grey);
+  background-color: var(--basic-grey);
 }
 
 a {
@@ -286,23 +289,25 @@ ul {
   margin-bottom: 26px;
   text-align: center;
   max-width: 120px;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 21px;
   padding-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nubmer-grey {
   margin-top: 0;
   margin-bottom: 23px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .desc-grey {
   margin-top: 23px;
-  margin-bottom: 0;
   text-align: center;
   max-width: 258px;
+  height: 43px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -311,15 +316,14 @@ ul {
   padding-top: 58px;
   padding-right: 382px;
   padding-bottom: 24px;
-  padding-left: 383px;
+  padding-left: 381px;
 }
-
 
 .desc-interest {
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 4px;
   text-align: center;
   padding-right: 10px;
@@ -329,8 +333,8 @@ ul {
   line-height: 24px;
   text-align: center;
   width: 435px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding-top: 28px;
   padding-bottom: 19px;
 }
@@ -614,8 +618,9 @@ ul {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   min-height: 100%;
+  margin: 0 auto;
 }
 
 .two-columns {
@@ -932,7 +937,7 @@ ul {
 
 .price-controls {
   position: relative;
-  height: 33px;
+  min-height: 33px;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -962,8 +967,9 @@ ul {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 58px;
   font-weight: 400;
+  text-align: center;
 }
 
 .price-controls input {
@@ -1026,7 +1032,7 @@ ul {
 
 
 .search-form-display {
-  display: none;
+  display: block;
 }
 
 
@@ -1074,9 +1080,11 @@ ul {
   font-size: 21px;
   line-height: 26px;
   border: none;
-  height: 86px;
+  outline: none;
+  max-height: 86px;
   padding: 30px 125px 30px 125px;
-  width: 568px;
+  max-width: 568px;
+  display: block;
 }
 
 .form-button:hover {
@@ -1096,7 +1104,6 @@ ul {
   font-size: 21px;
   line-height: 26px;
   display: block;
-  outline: none;
   border: none;
   padding: 16px 182px 16px 181px;
   width: 458px;
@@ -1135,6 +1142,7 @@ label {
 
 .search-date {
   display: block;
+  font-weight: 700;
   width: 121px;
   color: var(--basic-black);
 }
@@ -1148,12 +1156,16 @@ label {
   border: none;
   text-transform: uppercase;
   font-weight: 700;
+  padding-top: 6px;
+  padding-right: 200px;
+  padding-bottom: 6px;
+  padding-left: 13px;
 }
 
 .search-check:hover {
   background-color: var(--basic-pale-grey);
+  border: transparent;
 }
-
 
 .search-check:active {
   background-color: var(--basic-white);
@@ -1166,8 +1178,10 @@ label {
 }
 
 .calendar-pic {
-  top: 7px;
   position: absolute;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 9px;
   left: 94%;
   fill: var(--basic-light-grey);
 }
@@ -1195,6 +1209,7 @@ label {
 .search-visitors-text {
   width: 101px;
   margin-right: 11px;
+  font-weight: 700;
 }
 
 .search-visitors-text {
@@ -1206,6 +1221,7 @@ label {
 .search-visitors-text-children {
   width: 68px;
   margin-right: 1px;
+  font-weight: 700;
 }
 
 .search-visitors-number {
@@ -1217,6 +1233,7 @@ label {
   border: none;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 700;
 }
 
 .form-search-button {
@@ -1255,7 +1272,6 @@ label {
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
 
 }
-
 
 .button-search {
   position: relative;
